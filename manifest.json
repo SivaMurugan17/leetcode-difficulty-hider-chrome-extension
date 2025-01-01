@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Leetcode difficulty hider",
+    "version": "1.0.0",
+    "description": "Simple extension which hides difficulty tags in Leetcode.",
+    "content_scripts": [
+        {
+            "js": ["content-script.js"],
+            "matches": [
+                "https://leetcode.com/*"
+            ]
+        }
+    ]
+}
