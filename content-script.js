@@ -1,10 +1,21 @@
 const hideDifficultyTags = ()=>{
-    const difficultyTag =
+    const easyDifficultyTag =
         document.getElementsByClassName('text-difficulty-easy');
+    const mediumDifficultyTag =
+        document.getElementsByClassName('text-difficulty-medium');
+    const hardDifficultyTag =
+        document.getElementsByClassName('text-difficulty-hard');
 
-    console.log(difficultyTag);
-    if(difficultyTag.item(0)) {
-        difficultyTag.item(0).style.display = "none";
+    console.log(easyDifficultyTag,mediumDifficultyTag,hardDifficultyTag);
+
+    if(easyDifficultyTag.item(0)) {
+        easyDifficultyTag.item(0).style.display = "none";
+    }
+    if(mediumDifficultyTag.item(0)) {
+        mediumDifficultyTag.item(0).style.display = "none";
+    }
+    if(hardDifficultyTag.item(0)) {
+        hardDifficultyTag.item(0).style.display = "none";
     }
 }
 
